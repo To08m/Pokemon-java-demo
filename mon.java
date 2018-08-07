@@ -46,9 +46,13 @@ public class mon {
     }
 
     public void tostring(){
-        System.out.println("1. "+this.getMove1().getName()+" : "+this.getMove1().getPp()+"/"+this.getMove1().getPpmax());//cut and paste
+        System.out.println("1. "+this.getMove1().getName()+" : "+this.getMove1().getPp()+"/"+this.getMove1().getPpmax());
+        System.out.println("2. "+this.getMove2().getName()+" : "+this.getMove2().getPp()+"/"+this.getMove2().getPpmax());
+        System.out.println("3. "+this.getMove3().getName()+" : "+this.getMove3().getPp()+"/"+this.getMove3().getPpmax());
+        System.out.println("4. "+this.getMove4().getName()+" : "+this.getMove4().getPp()+"/"+this.getMove4().getPpmax());
+    }
 
-
-
+    public void battleCalc(int pow){
+        this.setHp(this.getHp()-pow);
     }
 }

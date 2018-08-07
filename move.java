@@ -30,4 +30,13 @@ public class move {
     public int getPpmax(){
         return ppmax;
     }
+
+    public boolean enuffPP(){
+        if(this.getPp() < 1){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 }
